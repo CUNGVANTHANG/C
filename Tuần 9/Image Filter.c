@@ -39,3 +39,5 @@ void print (int** image, int nRows, int nCols){
         printf("\n");
     }
 }
+
+//Cung Văn Thắng
