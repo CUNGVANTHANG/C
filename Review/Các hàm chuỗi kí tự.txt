@@ -1,0 +1,27 @@
+C Strings
++Hàm strlen(): trả về độ dài của chuỗi đã cho, nó không tính ký tự NULL - '\0'.
++Hàm strcpy(): sử dụng để sao chép chuỗi ký tự từ source tới target. 
++Hàm strcmp(): được sử dụng để so sánh 2 chuỗi. Nếu hàm strcmp(str1, str2) trả về 0 thì 2 chuỗi bằng nhau, 
+lớn hơn 0 thì chuỗi str1 lớn hơn chuỗi str2 và ngược lại nếu nhỏ hơn 0 thì chuỗi str1 nhỏ hơn str2. 
++Hàm strcat(): được sử dụng để nối 2 chuỗi trong C. 
++Hàm strrev(): trả về chuỗi đảo ngược của chuỗi đã cho. 
++Hàm strlwr(): trả về chuỗi chữ thường từ chuỗi đã cho. 
++Hàm strupr(): trả về chuỗi chữ HOA từ chuỗi đã cho. 
++Hàm strstr(): trả về con trỏ trỏ đến lần xuất hiện đầu tiên của chuỗi được khớp trong chuỗi đã cho. 
+Nó được sử dụng để trả lại chuỗi con từ vị trí khớp đầu tiên cho đến lần khớp cuối cùng. 
+Cú Pháp: char *strstr(const char *string, const char *match)
+
+ string: Nó đại diện cho chuỗi đầy đủ từ nơi chuỗi con sẽ được tìm kiếm.
+
+match: Nó đại diện cho chuỗi con được tìm kiếm trong chuỗi đầy đủ. 
+
+https://viettuts.vn/c-string/ham-strstr-trong-c
+
+
+
+
+
+
+
+
+ 

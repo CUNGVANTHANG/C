@@ -1,0 +1,28 @@
+-Định nghĩa: Biến là tên của vùng nhớ dùng để lưu trữ dữ liệu
+-Cú pháp tổng quát:
+        kiểu_dữ_liệu danh_sách_tên_biến;
+-Đặt tên cho biến:
+ Ví dụ:
+int toanHang1, toanHang;
+double laiSuat;
+char kiTu;
+    Có thể khởi tạo luôn giá trị cho biến khi khai báo.
+int toanHang1 = 50, toanHang2 = 100;
+char kiTu = 'C';
+
+
+     Có 3 loại biến
+- Biến hình thức
+- Biến cục bộ
+- Biến toàn cục
+
+      Danh sách các Keyword
+auto
+break
+case
+char
+do
+const
+continue
+default
+short

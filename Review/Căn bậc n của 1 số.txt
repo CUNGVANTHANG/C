@@ -1,0 +1,2 @@
+pow(a,n) trong #include<math.h>
+căn bậc n của 1 số

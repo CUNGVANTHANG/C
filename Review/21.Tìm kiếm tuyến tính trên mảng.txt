@@ -1,0 +1,98 @@
+                  Tìm kiếm 
+
+int* nhap(){
+     static int arr[10];// trả về con trỏ
+     int i;
+     for(i=0;i<10;i++){
+         scanf("%d", &arr[i]);
+     }
+     return arr;
+}
+
+void hienThi(const int arr[]){
+     int i;
+     for(i=0;i<10;i++){
+         printf("%5d", arr[i]);
+     }
+      printf("\n");
+}
+
+int linearSearch(int arr[], int x){ // tìm kiếm
+    int i;
+    for(i=0; i<10;i++){
+        if(arr[i] == x)
+              return 1;  //true
+    }
+       return 0; //false
+}
+
+int main(){
+    int *arr; //gán con trỏ
+    arr = nhap();
+    hienThi(arr);
+    
+    int x;
+    printf("\nNhap x= ");
+    scanf("%d", &x);
+
+    if(linearSearch(arr, x) ){
+      printf("\nTon tai x trong mang. ");
+    }
+    else{ 
+      printf("\nKhong ton tai x trong mang. ");
+    }
+    return 0;
+}
+
+
+
+                 Số lần xuất hiện trong mảng
+
+
+int* nhap(){
+     static int arr[10];// trả về con trỏ
+     int i;
+     for(i=0;i<10;i++){
+         scanf("%d", &arr[i]);
+     }
+     return arr;
+}
+
+void hienThi(const int arr[]){
+     int i;
+     for(i=0;i<10;i++){
+         printf("%5d", arr[i]);
+     }
+      printf("\n");
+}
+
+int linearSearch(int arr[], int x){ // tìm kiếm
+    int i;
+    for(i=0; i<10;i++){
+        if(arr[i] == x)
+              return 1;  //true
+    }
+       return 0; //false
+}
+
+int timX(int *arr, int x){
+      int i, count = 0;
+    for(i=0; i<10;i++){
+        if(arr[i] == x)
+            ++count;
+    }
+       return count;      
+}
+
+int main(){
+    int *arr; //gán con trỏ
+    arr = nhap();
+    hienThi(arr);
+    
+    int x;
+    printf("\nNhap x= ");
+    scanf("%d", &x);
+    
+    printf("\nSo lan xuat hien cua x trong mang: %d lan", timX(arr, x));
+    return 0;
+}

@@ -1,0 +1,2 @@
+Hàm void             return; (kết thúc hàm)
+Hàm int/float       return + giá trị; (trả về giá trị + kết thúc hàm)

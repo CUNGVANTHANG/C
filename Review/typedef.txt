@@ -1,0 +1,9 @@
++)Typedef dùng để đặt tên cho một kiểu dữ liệu.
+ví dụ: 
+typedef int kieunguyen;
+
+sau đó có thể dùng kieunguyen(cũng như int) để khai bao các biến, mảng:
+kieunguyen x, y, a[10], b[20][30];
+
+Tóm lại: Chỉ cần thêm từ khóa typedef vào một khai báo ta sẽ nhận được
+một tên kiểu dữ liệu và ta có thể dùng tên này để khai báo các biến, mảng, cấu trúc,..

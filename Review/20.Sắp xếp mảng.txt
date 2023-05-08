@@ -1,0 +1,44 @@
+                 Sắp xếp mảng
+
+
+int* nhap(){
+     static int arr[10];// trả về con trỏ
+     int i;
+     for(i=0;i<10;i++){
+         scanf("%d", &arr[i]);
+     }
+     return arr;
+}
+
+void hienThi(const int arr[]){
+     int i;
+     for(i=0;i<10;i++){
+         printf("%5d", arr[i]);
+     }
+      printf("\n");
+}
+
+void bubbleSort(int arr[]){  //Sắp xếp nổi bọt //sắp xếp tăng dần
+     int i, j;
+     for(i=0;i<10-1;i++){
+        for(j=10-1;j>i;j--){
+            if(arr[i]<arr[j-1]){ // tăng dần  //  if(arr[i]>arr[j-1]){  // giảm dần
+               int tmp = arr[j];
+               arr[j] = arr[j-1];  // đổi chỗ
+               arr[j-1] = tmp;
+            }
+        }
+     }
+}
+
+int main(){
+    int *arr; //gán con trỏ
+    arr = nhap();
+    printf("\nTruoc khi sap xep: ");
+    hienThi(arr);
+    
+    printf("\nSau khi sap xep: ");
+    hienThi(arr);
+    
+    return 0;
+}

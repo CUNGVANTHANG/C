@@ -1,0 +1,18 @@
+So sánh gets() và fgets()
+
+Giống nhau:
+1. Cùng chức năng đọc vào xâu kí tự có chứa khoảng trắng.
+2. Trả về xâu kí tự vừa đọc được.
+
+Khác nhau:
+1. số lượng tham số
++)  gets() :  1: (char *str)
++) fgets(): 3: (char *str, int n, FILE *stream)
+
+2.Điều kiện dừng
++) gets(): Khi gặp kí tự newline hoặc end of file.
++) fgets(): Khi gặp kí tự newline hoặc n-1 kí tự đã được đọc hoặc end of life.
+
+3.Mức độ an toàn
++) gets() : Không an toàn
++) fgets() : Có

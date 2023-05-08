@@ -1,0 +1,27 @@
+Khai báo chuỗi:
+char Tên_chuỗi[số ký tự ];
+ví dụ:
+#include<stdio.h>
+
+int main(){
+     char cname[30];
+    C1: printf("Ban ten gi?");
+     scanf("%s", cname);   --> không cần &
+     printf("Chao ban %s\n", cname);
+
+    C2: puts("Cho biet ten ban: ");
+    gets(cname);
+    puts("Chao ban ");
+    puts(cname);
+
+   C3: gán
+   char chao[] ="Chao ban";
+   printf("Cho biet ten cua ban: ");
+   gets(cname);
+   printf("%s %s. \n", chao, cname);
+   
+
+   return 0;
+
+
+}

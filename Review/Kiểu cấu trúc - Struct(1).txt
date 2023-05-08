@@ -1,0 +1,54 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+//cú pháp
+C1:
+struct tenStruct{
+       khai bao cac thanh phan cua kieu;
+};
+
+C2:
+struct tenStruct{
+       khai bao cac thanh phan cua kieu;
+}danh sach cac bien thuoc kieu cau truc;
+
+C3:
+struct{
+       khai bao cac thanh phan cua kieu;
+}danh sach cac bien thuoc kieu cau truc;
+
+VD:
+struct nhanvien{
+      char manv[10];
+      char hoten[30];
+      int tuoi;
+};
+int main(){
+     struct nhanvien nv1, nv2;
+     // nhap  du lieu
+    printf("Nhap du lieu cho nhan vien 1: \n");
+    printf("Nhap ma nhan vien: "); fflush(stdin);
+    gets(nv1.manv);
+    printf("Nhap ho ten nhan vien: "); fflush(stdin);
+    gets(nv1.hoten);
+    printf("Nhap tuoi: "); fflush(stdin);
+    scanf("%d", &nv1.tuoi);
+
+    printf("Nhap du lieu cho nhan vien 2: \n");
+    printf("Nhap ma nhan vien: "); fflush(stdin);
+    gets(nv2.manv);
+    printf("Nhap ho ten nhan vien: "); fflush(stdin);
+    gets(nv2.hoten);
+    printf("Nhap tuoi: ");fflush(stdin);
+     scanf("%d", &nv2.tuoi);
+    
+   // In thong tin
+    printf("-------------------THONG TIN NHAN VIEN----------------\n");
+    printf("%-20s %-20s %-10s\n", "Ma nhan vien", "Ho ten");
+    printf("%-20s %-20s %-10d\n", nv1.manv, nv1.hoten, nv1.tuoi);
+    printf("%-20s %-20s %-10d\n", nv2.manv, nv2.hoten, nv2tuoi);
+
+
+
+   return 0;
+}

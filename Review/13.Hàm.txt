@@ -1,0 +1,38 @@
+*Hàm là một nhóm các câu lệnh cùng thực hiện trọn vẹn một chức năng nào đó
+*Ta dùng hàm để tách chương trình ra thành các đoạn code nhỏ có chức năng cụ thể, hoàn chỉnh.
+-Dễ quản lý chương trình
+-Rõ ràng, tường minh từng chức năng
+-Có thể thuận tiện cho tái sử dụng
+
+-Khai báo:
+    kiểu_trả_về tên_hàm(danh_sách_tham_số);
+-Định nghĩa:
+    kiểu_trả_về tên_hàm(danh_sách_tham_số){
+         // chức năng của hàm
+    }
+VD:Khai báo
+int max(int, int);
+int tong(int, int);
+
+VD:Định nghĩa
+int max(int a, int b){
+    if(a>b)
+         return a;
+     return b;
+}
+
+int tong(int a, int b){
+     return a+b;
+}
+
+*Trong đó:
+-Kiểu_trả_về: là kiểu hợp lẹ trong ngôn ngữ C, thường là void, kiểu cơ bản, kiểu con trỏ..
+-Tên_hàm:người dùng tự đặt, liên quan tới chức năng của hàm, tránh các keyword, theo quy tắc CamelCase.
+-Danh_sách_tham_số: các biến cần thiết để nhận giá trị cho hàm hoạt động
+-Thân hàm gồm các câu lệnh cùng thức hiện chức năng của hàm
+
+*Phân thành 2 loại:
+-Hàm trả về: có kiểu trả về khác void
+-Hàm không trả về: kiểu trả về là void
+
+

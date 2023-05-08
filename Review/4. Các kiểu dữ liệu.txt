@@ -1,0 +1,31 @@
+Các kiểu nguyên :              : Khoảng giá trị
+- char          :1 byte        : -128 to 127 or 0 to 255
+- unsigned char :1 byte        :  0 to 255
+- signed char   :1 byte        : -128 to 127
+- int           :2 or 4 byte   : -32,768 to 32,767 or -2,147,483,648 to 2,147,483,647
+- unsigned int  :2 byte        : 0 to 65,535 or 0 to 4,294,967,295
+- short         :2 byte        : -32,768 to 32,767
+- unsigned short:2 byte        :  0 to 65,535  
+- long          :4 byte        :  -2,147,483,648 to 2,147,483,647
+- unsigned long :4 byte        :  0 to 4,294,967,295
+Các kiểu số thực:
+float 6 chữ số
+double 15 chữ số
+long double 19 chữ số
+Bổ sung : 
+Kiểu long long: 8 byte
+
+
+
+Cách xác định khoảng lưu trữ của một kiểu dữ liệu:
+-Max = 2^(số byte *8) -1;
+
+Để kiểm tra kích thước của một kiểu: sizeof(kiểu);
+Bài 1: Kiểm tra kích thước của một kiểu dữ liệu
+#include<stdio.h>
+
+int main(){
+    printf("kich thuoc cua kieu char: %d", sizeof(char));
+    printf("\nkich thuoc cua kieu char: %d, sizeof(int));
+    return 0;
+}

@@ -1,0 +1,28 @@
+*Tham số là các biến được khai báo trong ở phần ngoặc tròn khi định nghĩa hàm
+VD:a , b là tham số
+int max(int a, int b){
+    if(a>b)
+     return a;
+   return b;
+}
+
+*Đối số là các biến hoặc giá trị được truyền vào hàm khi thực hiện lời gọi hàm.
+-Đối số có thể là biến hoặc giá trị, địa chỉ, nhưng tham số chỉ có thể là các biến.
+VD:a, b là đối số
+   printf("Max cua 200, 600:%d", max(a, b));
+   hieu(a, b);
+
+
+VD: Tham chiếu : thay đổi giá trị ban đầu
+void swap(int *a, int *b){
+   
+    int tmp = *a;// luu gia tri chua trong con tro a
+        *a = *b; // gan gia tri chua trong con tro b cho a
+        *b = tmp; // gan gia tri ban dau chua trong con tro a cho con tro b
+}
+VD: Tham trị  
+void swap(int a, int b){
+    int tmp = a;
+    a = b;
+    b = tmp;
+}

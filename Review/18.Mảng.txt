@@ -1,0 +1,19 @@
+*Mảng là một nhóm các ô nhớ liền kề nhau dùng để lưu trữ các phần tử cùng kiểu.
+Vậy mảng có kiểu là kiểu của các phần tử mà nó chứa. Mảng là một kiểu dữ liệu có cấu trúc
+
+*Cú pháp tổng quát để định nghĩa (khai báo) mảng:
+    Kiểu tên_mảng[số_lượng_phần_tử ];
+  VD:
+    int a[10];
+    char c[20];
+*Khởi tạo:
+   Kiểu tên_mảng[]={danh_sách_giá_trị}
+  VD:
+    int a[] = {1, 20, 5, 6, -7, -11};
+    int arr[10]= {1, 2, 6}; // các phần tử còn lại sẽ là 0
+*Có thể gán giá trị riêng lẻ cho từng phần tử của mảng
+  VD:
+    int arrOflnt[100];
+   sau đó gán arrOflnt[2]=200;
+              arrOflnt[10]=-230;
+*Để duyệt mảng thường sử dụng vòng lặp for

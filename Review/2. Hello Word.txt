@@ -1,0 +1,21 @@
+Bài 1: Hello word
+// this is my first C program
+#include<stdio.h>
+
+int main(){
+      printf("Hello Word");
+      return 0;
+}
+
+Bài 2: Hello word cách xuống dòng
+// this is my first C program
+#include<stdio.h>
+
+int main(){
+      printf("Hello word\n");
+      printf("Xin chao\n");
+      prinft("Minh la");
+      prinft("Thang");
+      return 0;
+}
+

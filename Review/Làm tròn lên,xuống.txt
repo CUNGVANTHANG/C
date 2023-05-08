@@ -1,0 +1,2 @@
+b = ceil(a); // làm tròn lên
+b = floor(a); // làm tròn xuống

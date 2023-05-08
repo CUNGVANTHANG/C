@@ -1,0 +1,17 @@
+VD: Tính giai thừa
+#include<stdio.h>
+
+unsigned long long giaiThua(int n){
+       if(n==0 || n==1) //truong hop co so
+           return 1;
+       else  // truong hop tiep tuc goi de quy
+          return n*giaiThua(n-1);
+}
+
+int main(){
+        int i;
+        for(i = 0; i<21; i++){  // hien thi tu 0! toi 20!
+              printf("%d! = %lld\n", i, giaiThua(i));
+        }
+      return 0;
+}

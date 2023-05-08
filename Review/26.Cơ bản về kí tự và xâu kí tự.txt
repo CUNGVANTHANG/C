@@ -1,0 +1,48 @@
+Ta dùng mảng char để lưu xâu kí tự:
++) char hello[] = "hello world!";
+
+       Kí tự cuối cùng trong xâu kí tự luôn là kí tự NULL('\0').Do đó một mảng char chứa từ "Hello"
+sẽ bao gồm: {'H', 'e', 'l', 'l', 'o', '\0'}.
+      --> Mở rộng ra: xâu có độ dài n thì cần mảng char có n+1 phần tử để lưu trữ
+
+VD:
+#include<stdio.h>
+
+int main(){
+    char c;
+    scanf("%c", &c);
+    printf("%d", c); //in ra ma ACSII cua ki tu A
+    printf("\n%c", c);
+    //ffush(stdin);
+   // gets(str);
+   printf("\n%s", str);
+  return 0;
+}
+
+
+hoặc:
+int main(){
+    char c = getchar();
+   // scanf("%c", &c);
+    printf("%d", c); //in ra ma ACSII cua ki tu A
+    printf("\n%c", c);
+    //ffush(stdin);
+   // gets(str);
+   printf("\n%s", str);
+  return 0;
+}
+
+
+hoặc:
+int main(){
+    char c = getchar();
+   // scanf("%c", &c);
+    printf("%d", c); //in ra ma ACSII cua ki tu A
+    printf("\n%c\n", c);
+
+    char str[13];
+    ffush(stdin); // xoa bo dem(khi ta nhập kí tự ở trên muốn nhập thêm kí tự ở dưới để không ảnh hưởng đến kí tự ở trên thì dùng hàm)
+    gets(str);
+   printf("\n%s", str);
+  return 0;
+}

@@ -1,0 +1,39 @@
+Vòng lặp for:
+   for(giá_trị_khởi_tạo; điều_kiện_lặp; bước_nhảy){
+       //nội dung cần lặp
+}
+
+
+1.Đầu tiên là bước khởi tạo giá trị cho biến lặp(tùy chọn)
+2.Sau đó điều kiện lặp sẽ được kiểm tra, nếu thoả mãn thì thực hiện thân vòng lặp và thực hiện bước nhảy.
+3.Thực hiện lặp lại bước 2 tới khi điều kiện lặp không còn thỏa mãn.
+
+Ví dụ:
+int i;
+int sum=0;
+for(i=0; i<10;i++){
+   sum+= i;
+}
+  printf("Sum = %d\n", sum);
+
+Ví dụ: vòng lặp khuyết
+int i=0;
+int sum=0;
+for( ; i<10;i++){
+   sum+= i;
+   i++;
+}
+  printf("Sum = %d\n", sum);
+
+Ví dụ: vòng lặp vô hạn
+int i=0;
+int sum=0;
+for( ; ;i++){
+   if(i>=10)
+          break;
+   sum+= i;
+   i++;
+}
+  printf("Sum = %d\n", sum);
+
+

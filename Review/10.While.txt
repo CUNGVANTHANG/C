@@ -1,0 +1,15 @@
+-Các nội dung trong phần này:
+  - Tổng quát:
+   while(điều kiện lặp){
+  //nội dung cần lặp
+}
+
+
+VD; In ra màn hình các giá trị 0-->10
+int count = 0;
+while(count <=10 ){
+   printf("Gia tri count = %d\n", count);
+   ++count;
+}
+
+

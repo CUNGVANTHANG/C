@@ -1,0 +1,34 @@
+• double sqrt( double x ): lấy căn bậc 2 của số không âm
+x.
+o Ví dụ: sqrt(9) = 3.0;
+• double cbrt( double x ): căn bậc 3 của x.
+o Ví dụ: cbrt(27)= 3.0;
+• double exp( double x ): e mũ x. e= 2.718
+• double log( double x ): logarit cơ số e của x.
+o Ví dụ log( 2.718282 ) = 1.0
+• double log10( double x ): logarit cơ số 10 của x.
+o Ví dụ: log10(100) = 2.0;
+• int abs( int x ): lấy giá trị tuyệt đối của số nguyên x.
+• double fabs( double x ): lấy giá trị tuyệt đối của x.
+o Ví dụ: fabs( -5.0 ) = 5.0;
+• double ceil( double x ): làm tròn lên số nguyên gần nhất
+lớn hơn hoặc bằng x.
+o Ví dụ: ceil( 9.2 ) = 10.0;
+• double round( double x ): làm tròn số. Làm tròn lên hoặc
+xuống tùy độ lẻ.
+• double floor( double x ): làm tròn xuống số nguyên gần
+nhất nhỏ hơn hoặc bằng x.
+o Ví dụ: floor( 9.5 ) = 9.0;
+• double pow( double x, double y ): x mũ y.
+o Ví dụ: pow(2, 3) = 8;
+• double fmod( double x, double y ): phần dư chia x cho y.
+o Ví dụ: fmod( 12.55, 4 ) = 0.55;
+• double sin( double x ): tính sin của x.
+o Ví dụ: sin( 90*1.0/180 ) = 1.0; x tính theo radian
+• double cos( double x ): tính cos của x.
+o Ví dụ: cos ( 60*1.0/180 ) = 0.5; x tính theo radian
+• double tan( double x ): tính tan của x.
+o Ví dụ: tan (45*1.0/180 ) = 1.0; x tính theo radian
+• double asin( double x ): tính arc sin của x (ở radian).
+• double acos( double x ): tính arc cos của x (ở radian).
+• double atan( double x ): tính arc tan của x (ở radian).

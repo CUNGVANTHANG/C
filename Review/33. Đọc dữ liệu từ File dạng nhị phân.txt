@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+struct Ngaysinh{
+	int ngay;
+	int thang;
+	int nam;
+};
+
+int main(){
+	FILE *f;
+	// Mo file
+	f = fopen("Bai_VD.bin", "rb");
+	if(f==NULL){
+		printf("\n Loi mo file!");
+		exit(1);
+	}	
+	// Doc du lieu
+	Ngaysinh n1;
+	fread(&n1, sizeof(struct Ngaysinh), 1, f);
+	printf("\n Ngay sinh: %d/%d/%d", n1.ngay, n1.thang, n1.nam);
+	// Dong file
+	fclose(f);
+	
+	return 0;
+}	

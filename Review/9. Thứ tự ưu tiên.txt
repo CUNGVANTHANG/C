@@ -1,0 +1,5 @@
+Thứ tự ưu tiên của các toán tử:
+1. Dấu() có mức ưu tiên cao nhất
+2. *, /, % được thực hiện từ trái qua phải
+3. +, - được thực hiện từ trái qua phải
+4. =

@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+	FILE *f;
+	//1, 2 Tao, mo file
+	f = fopen("Bai_VD.txt", "r");
+	if(f==NULL){
+		printf("\n Loi tao hoac mo file!");
+		return;
+	}	
+	//3 Doc hoac ghi du lieu
+	int n;
+	fscanf(f, "%d", &n);
+	printf("\nGia tri cua n: %d", n);
+	//4 Dong file
+	fclose(f);
+	return 0;
+}	

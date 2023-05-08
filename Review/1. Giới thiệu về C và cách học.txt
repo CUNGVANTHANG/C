@@ -1,0 +1,14 @@
+Chương 1: Giới thiệu các khái niệm cơ bản
+Chương 2: Các câu lệnh điều khiển
+Chương 3: Các hàm
+Chương 4: Các mảng
+Chương 5: Các con trỏ
+Chương 6: Các kí tự và xâu
+Chương 7: Các kiểu dữ liệu có cấu trúc
+Chương 8: Thao tác với file
+Chương 9: Mở rộng
+
+Tài liệu tham khảo:
+- C-how to programming  
+- C programming tutorial
+- Google     

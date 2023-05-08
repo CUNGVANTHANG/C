@@ -1,0 +1,45 @@
+                   Truyền mảng:
+
+void nhap(const int arr[]){
+    int i;
+    for(i=0;i<10;i++){
+        scanf("%d", &arr[i]);
+    }
+}
+
+void hienThi(const int arr[]){
+     int i;
+     for(i=0;i<10;i++){
+         printf("%5d", arr[i]);
+     }
+      printf("\n");
+}
+
+                   Trả về mảng: (con trỏ)
+
+int* nhap(){
+     static int arr[10];// trả về con trỏ
+     int i;
+     for(i=0;i<10;i++){
+         scanf("%d", &arr[i]);
+     }
+     return arr;
+}
+
+void hienThi(const int arr[]){
+     int i;
+     for(i=0;i<10;i++){
+         printf("%5d", arr[i]);
+     }
+      printf("\n");
+}
+
+int main(){
+    int arr[10];
+    int *b;// gán con trỏ
+    
+    b = nhap();
+    hienThi(b);
+    
+    return 0;
+}

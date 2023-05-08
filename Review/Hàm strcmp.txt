@@ -1,0 +1,6 @@
+Hàm strcmp();
+ - Thuộc thư viện string.h
+ - Cấu trúc:
+   int strcmp(const char* str1, const char* str2);
+- Nếu ký tự đầu tiên của hai chuỗi bằng nhau thì ký tự tiếp theo của hai chuỗi được so sánh.
+- So sánh tiếp tục cho đến khi các ký tự tương ứng của hai chuỗi khác nhau hoặc gặp null '\0'

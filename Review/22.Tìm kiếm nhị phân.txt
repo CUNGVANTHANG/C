@@ -1,0 +1,58 @@
+int nhap(int arr[] ){
+    int i;
+    for(i=0;i<N;i++){
+        scanf("%d" , &arr[i]);
+    }
+
+void hienThi(const int arr[]){
+     int i;
+     for(i=0;i<N;i++){
+         printf("%5d", arr[i]);
+     }
+         printf("\n");
+}
+
+
+void bubbleSort(int arr[]){  //Sắp xếp nổi bọt //sắp xếp tăng dần
+     int i, j;
+     for(i=0;i<10-1;i++){
+        for(j=10-1;j>i;j--){
+            if(arr[i]<arr[j-1]){ // tăng dần  //  if(arr[i]>arr[j-1]){  // giảm dần
+               int tmp = arr[j];
+               arr[j] = arr[j-1];  // đổi chỗ
+               arr[j-1] = tmp;
+            }
+        }
+     }
+}
+
+int binarySearch(int arr[], int x){
+    int left = 0, right = N-1;
+    while(left <= right){
+         int mid = (left + right)/2;
+         if(arr[mid] == x)
+              return 1; // tim thay
+         else if(arr[mid] < x)
+             left = mid +1;
+         else right = mid -1;
+    }
+       return 0;
+}
+
+int main(){
+     int arr[N];
+     nhap(arr);
+     bubbleSort(arr);
+     hienThi(arr);
+     int x;
+    
+     while(1){
+         printf("\nNhap x  = ");
+         scanf("%d", &x);
+         if(x == -1) break;
+         if(binarySearch(arr, x))
+             printf("\nTim thay x");
+         else printf("\nKhong tim thay x. ");
+     }
+      return 0;
+}

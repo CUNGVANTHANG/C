@@ -1,0 +1,46 @@
+Mảng 2 chiều:
+#include<stdio.h>
+
+#define N 100
+
+void xuat(int arr[N][N], int m, int n){
+       puts("Cac phan tu cua mang: ");
+       int i, j;
+       for(i=0;i<m;i++){
+          for(j=0;j<n;j++){
+             printf("%5d", arr[i][j]);
+          }
+            printf("\n");
+       }
+}
+
+void nhap(int arr[N][N], int m, int n){
+      puts("Nhap cac phan tu cua mang: ");
+      int i, j;
+      for(i=0;i<m;i++){
+         for(j=0;j<n;j++){
+           scanf("%d", &arr[i][j]);
+         }
+      }
+}
+
+}
+int main(){
+      
+     int arr[N][N];  // 3 là hàng, 4 là cột
+          
+       
+
+     // kieu_du_lieu ten_mang[so hang][so cot];
+      int m, n;
+      puts("Nhap so hang, so cot: ");
+      scanf("%d%d", &m, &n);
+      nhap(arr, m, n);
+      xuat(arr, m, n);
+    
+        
+      xuat(arr, m, n);
+
+    return 0;
+
+}

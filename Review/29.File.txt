@@ -1,0 +1,32 @@
+1. fopen() : mở tệp mới hoặc file đang tồn tại
+2. fprintf() : ghi dữ liệu vào file
+3. fscanf() : đọc dữ liệu từ file
+4. fputc() : ghi một ký tự vào file
+5. fgetc() : đọc một ký tự từ file
+6. fclose() : đóng file
+7. fseek() : đặt con trỏ tập tin vào vị trí đã cho
+8. fputw() : ghi một số nguyên vào file
+9. fgetw() : đọc một số nguyên từ file
+10. ftell() : trả về vị trí hiện tại
+11. rewind() : đặt con trỏ tập tin vào đầu tập tin
+
+
+
+Mở file: fopen()
+FILE *fptr;
+fptr = open("fileopen", "mode");
+                       MODE:
+r : mở file văn bản ở chế độ đọc
+w : mở file văn bản ở chế độ ghi
+a : mở file văn bản ở chế độ nối thêm nội dung vào nội dung sẵn có trong file
+r+ : mở file văn bản ở chế độ đọc và ghi
+w+ : mở file văn bản ở chế độ đọc và ghi
+a+ : mở file văn bản ở chế độ đọc và ghi
+rb : mở file văn bản ở chế độ đọc và ghi
+wb : mở file nhị phân ở chế độ đọc
+ab : mở file nhị phân ở chế độ nối thêm nội dung vào nội dung sẵn có trong file
+rb+ : mở file nhị phân ở chế độ đọc và ghi
+wb+ : mở file nhị phân ở chế độ đọc và ghi
+ab+ : mở file nhị phân ở chế độ đọc và ghi
+
+Đóng file: fclose();

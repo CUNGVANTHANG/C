@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+struct nhanvien{
+         char manv[10];
+         char hoten[30];
+         int tuoi;
+         struct ngaysinh{
+                  int ngay, thang, nam;
+         }ns;
+
+};
+
+int main(){
+     struct nhanvien nv1, nv2;
+     // nhap  du lieu
+    printf("Nhap du lieu cho nhan vien 1: \n");
+    printf("Nhap ma nhan vien: "); fflush(stdin);
+    gets(nv1.manv);
+    printf("Nhap ho ten nhan vien: "); fflush(stdin);
+    gets(nv1.hoten);
+    printf("Nhap tuoi: "); fflush(stdin);
+    scanf("%d", &nv1.tuoi);
+   printf("Nhap ngay sinh: ");fflush(stdin);
+   scanf("%d/%d/%d", &nv1.ns.ngay, &nv1.ns.thang, &nv1.ns.nam);
+
+    printf("Nhap du lieu cho nhan vien 2: \n");
+    printf("Nhap ma nhan vien: "); fflush(stdin);
+    gets(nv2.manv);
+    printf("Nhap ho ten nhan vien: "); fflush(stdin);
+    gets(nv2.hoten);
+    printf("Nhap tuoi: ");fflush(stdin);
+     scanf("%d", &nv2.tuoi);
+   printf("Nhap ngay sinh: ");fflush(stdin);
+   scanf("%d/%d/%d", &nv2.ns.ngay, &nv2.ns.thang, &nv2.ns.nam);
+    
+   // In thong tin
+    printf("-------------------THONG TIN NHAN VIEN----------------\n");
+    printf("%-20s %-20s %-10s %-10s\n", "Ma nhan vien", "Ho ten", "Ngay sinh");
+    printf("%-20s %-20s %-10d %02d/%02d/%4d\n", nv1.manv, nv1.hoten, nv1.tuoi, nv1.ns.ngay, nv1.ns.thang, nv1.ns.nam);
+    printf("%-20s %-20s %-10d %02d/%02d/%4d\n", nv2.manv, nv2.hoten, nv2.tuoi, nv2.ns.ngay, nv2.ns.thang, nv2.ns.nam);
+
+
+
+   return 0;
+}

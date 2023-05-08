@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main(){
+    char c; // %c
+    scanf("%c", &c);
+    printf("gia tri cua bien char = %c", c);
+
+
+    short s; // %hi
+    unsigned short us; // %hu
+    int i; // %i, %d
+    long l; // %ld, %li
+    unsigned int ui; // %u
+    long long ll; // %lli, %lld
+    unsigned long long ull; // %llu
+    float f; // %f
+    double d; // %lf, %lF
+    return 0;
+}

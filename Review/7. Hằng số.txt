@@ -1,0 +1,18 @@
+Hằng số là biến mà giá trị của nó không thay đổi trong suốt quá trình thực hiện chương trình.
+Hằng số có thể là bất kì kiểu dữ liệu nào.
+
+Cách định nghĩa một hằng số
+- #define tên giá_trị
+- const kiểu tên = giá_trị;
+Ví dụ minh họa:
+
+Một số hằng kí tự đặc biệt
+\\ : kí tự \
+\? : kí tự ?
+\" : kí tự "
+\' : kí tự '
+\n : xuống dòng mới
+\a : chuông
+\t : tab ngang
+\v : tab dọc
+\b : backspace

@@ -1,0 +1,21 @@
+Bài 1:Cộng, trừ, nhân, chia số nguyên
+#include<stdio.h>
+
+int main(){
+    int a, b, sum;// khai bao bien nguyen
+    scanf("%d%d", &a, &b);// nhap vao hai so a, b nguyen
+    sum = a+b;// tong a+b
+    printf("%d + %d = %d", a, b, sum);
+    return 0;
+}
+
+Bài 2:Cộng, trừ, nhân, chia số nguyên hoặc không nguyên
+#include<stdio.h>
+
+int main(){
+    float a, b, sum;
+    scanf("%f%f", &a, &b);
+    sum = a/b;
+    printf("%f / %f = %f", a, b, sum);
+    return 0;
+}

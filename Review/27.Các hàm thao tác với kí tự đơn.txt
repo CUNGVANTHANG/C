@@ -1,0 +1,45 @@
+#include<ctype.h>
+
+*int isblank( int c);Trả về true (1) nếu kí tự trong tham số là kí tự khoảng trắng
+và false (0) trong các trường hợp còn lại. 
+VD:
+
+#include<stdio.h>
+#include<ctype.h>
+
+int main(){
+    char c = ' ';
+    if(isblank(c))
+      printf("%c is blank", c);
+    else printf("%c is not blank", c);
+    return 0;
+}
+
+*int isdigit(int c); Trả về true (1) nếu kí tự trong tham số là kí tự chữ số từ '0' tới '9'
+và false (0) trong các trường hợp còn lại. 
+
+*int isalpha(int c);Trả về true nếu kí tự trong tham số là kí tự chữ cái,
+và false trong các trường hợp còn lại. 
+
+*int isalnum(int c);Trả về true  nếu kí tự trong tham số là kí tự chữ cái hoặc chữ số,
+và false trong các trường hợp còn lại. 
+
+*int isxdigit(int c);Trả về true  nếu kí tự trong tham số là kí tự đại diện của biểu diễn cơ số 16(0 -> 9, A, B, C, D, E, F),
+và false trong các trường hợp còn lại. 
+
+*int islower(int c);Trả về true  nếu kí tự trong tham số là kí tự thường
+và false  trong các trường hợp còn lại. 
+
+*int isupper(int c);Trả về true nếu kí tự trong tham số là kí tự hoa
+và false trong các trường hợp còn lại. 
+
+*int toupper(int c);Biến kí tự thường thành kí tự hoa.
+
+*int isspace(int c);Trả về true nếu tham số là kí tự khoảng trắng hoặc '\n', '\v', '\t', '\r', '\f'. 
+Trả về false trong các trường hợp còn lại.
+
+*int iscntrl(int c);Trả về true nếu kí tự trong tham số là kí tự điều khiển
+và false trong các trường hợp còn lại. 
+
+*int ispunct(int c);Trả về true nếu kí tự trong tham số là kí tự khoảng trắng, chữ cái, chữ số
+và false trong các trường hợp còn lại. 

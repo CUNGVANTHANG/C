@@ -1,0 +1,8 @@
+#include<stdio.h>
+
+/*
+    Toan tu toan hoc: + - * / % ++ --
+    Toan tu so sanh: == != > >= < <=
+    Toan tu logic: && || !
+    Toan tu gan: = += *= -+ /= %=
+*/

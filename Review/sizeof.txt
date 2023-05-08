@@ -1,0 +1,4 @@
+sizeof cho ta kích cỡ (tính theo byte) của một kiểu dữ liệu cũng như một đối tượng dữ liệu
+
+sizeof(kiểu dữ liệu)
+sizeof(Đối tượng dữ liệu)

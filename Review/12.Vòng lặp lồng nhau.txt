@@ -1,0 +1,20 @@
+int i, j, count = 0;
+i=100;
+j=200;
+
+VD1:if lồng nhau
+if(i>0){
+   if(j>0)
+        printf("\ni, j cung > 0");
+}
+
+VD2:for lồng nhau
+for(i=0; i<3; i++){
+   for(j=0; j<3; j++){
+        printf("%5d", count++);
+     }
+       printf("\n\n");
+}
+
+-Continue: Cho phép chương trình bỏ qua của phần còn lại của vòng lặp
+-break: dừng lại luôn câu lệnh
